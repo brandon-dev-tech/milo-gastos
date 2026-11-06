@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Política de privacidad | Milo Gastos</title>
+  <meta name="description" content="Qué datos usa la app Milo Gastos, a dónde van y qué podés hacer con ellos.">
+  <link rel="stylesheet" href="../estilos.css">
+</head>
+<body>
+  <nav><a href="../">Milo Gastos</a></nav>
+  <main>
+    <h1>Política de privacidad</h1>
+    <p class="fecha">Última actualización: 5 de noviembre de 2026</p>
+
+    <p>Milo Gastos es una app para registrar gastos personales, operada por Brandon Fuentes. Esta política explica qué datos usa la app, a dónde van y qué podés hacer con ellos.</p>
+
+    <h2>1. Lo principal</h2>
+    <ul>
+      <li>No hace falta crear una cuenta, y no te pedimos nombre ni correo.</li>
+      <li>Tus gastos, categorías y demás registros se guardan en tu teléfono, no en nuestros servidores.</li>
+      <li>Solo enviamos datos a un servicio de inteligencia artificial si nos das permiso.</li>
+      <li>No vendemos tus datos, no mostramos publicidad y no te rastreamos entre apps o sitios de otras empresas.</li>
+    </ul>
+
+    <h2>2. Datos que se quedan en tu teléfono</h2>
+    <p>Los gastos, categorías, recurrencias y preferencias se guardan solo en tu dispositivo. Si hacés copias de seguridad de tu teléfono, por ejemplo en iCloud, pueden incluir estos datos según cómo tengás configurado tu dispositivo.</p>
+    <p>Si no hay conexión, el audio de un gasto por voz espera en tu teléfono hasta que se pueda enviar. Se borra después de procesarlo.</p>
+    <p>Si exportás tus gastos a CSV, el archivo va a donde vos decidás compartirlo.</p>
+
+    <h2>3. Datos que se envían a OpenAI, solo con tu permiso</h2>
+    <p>La app te pide permiso antes de enviar datos a OpenAI, un servicio de inteligencia artificial de terceros. Los datos pasan primero por nuestro servidor, alojado en Google Cloud en Estados Unidos.</p>
+    <table>
+      <thead>
+        <tr><th>Función</th><th>Qué se envía</th><th>Para qué</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-etiqueta="Función">Gastos por voz</td>
+          <td data-etiqueta="Qué se envía">El audio que grabás, el texto que resulta de transcribirlo y los nombres de tus categorías</td>
+          <td data-etiqueta="Para qué">Transcribir el audio y detectar monto, fecha y categoría</td>
+        </tr>
+        <tr>
+          <td data-etiqueta="Función">Apple Pay automático</td>
+          <td data-etiqueta="Qué se envía">El nombre del comercio y los nombres de tus categorías. El monto no se envía</td>
+          <td data-etiqueta="Para qué">Elegir la categoría del gasto</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Evitá mencionar datos sensibles, como números de tarjeta, en tus audios.</p>
+    <p><strong>En nuestro servidor:</strong> el audio se procesa y no se conserva. Nuestro servidor guarda durante 30 días registros técnicos de cada solicitud, como la dirección IP, la fecha y el resultado. Esos registros no incluyen tu audio, el texto transcrito ni el nombre del comercio.</p>
+    <p><strong>En OpenAI:</strong> según la <a href="https://developers.openai.com/api/docs/guides/your-data">documentación de OpenAI</a>, los datos enviados por este medio no se usan para entrenar sus modelos. La transcripción del audio no tiene un periodo de conservación para monitoreo de abusos. El texto usado para detectar gastos y categorizar comercios se conserva hasta 30 días para ese monitoreo, o más si la ley lo exige. Nosotros no podemos borrar esos datos antes de ese plazo.</p>
+    <p>Podés retirar tu permiso cuando quieras en <strong>Ajustes → Funciones con IA</strong>. A partir de ese momento no se envían más datos. Los gastos por voz dejan de estar disponibles hasta que vuelvas a aceptar, y los pagos de Apple Pay se anotan en "Otros".</p>
+
+    <h2>4. Otros servicios</h2>
+    <ul>
+      <li><strong>Apple</strong> procesa los pagos y las suscripciones. No recibimos los datos de tu tarjeta.</li>
+      <li><strong>RevenueCat</strong> administra el estado de tu suscripción. Recibe un identificador que no incluye tu nombre ni tu correo, el tipo de dispositivo, el sistema operativo, la última vez que usaste la app y el recibo de compra de Apple. No le enviamos tus gastos, tus audios ni tu correo. Consultá la <a href="https://www.revenuecat.com/privacy/">política de privacidad de RevenueCat</a>.</li>
+      <li><strong>Google Fonts</strong> entrega la tipografía de la app, por lo que Google recibe tu dirección IP cuando la descarga. Consultá las <a href="https://developers.google.com/fonts/faq/privacy">preguntas sobre privacidad de Google Fonts</a>.</li>
+    </ul>
+    <p>Solo compartimos datos con estos proveedores y con OpenAI para que la app funcione, y esperamos de ellos una protección igual o mayor a la que describe esta política.</p>
+
+    <h2>5. Datos fuera de tu país</h2>
+    <p>Nuestro servidor, OpenAI y RevenueCat están en Estados Unidos. Si usás la app desde otro país, los datos descritos en las secciones 3 y 4 viajan hasta allá. Los datos que se quedan en tu teléfono no se transfieren.</p>
+
+    <h2>6. Seguridad</h2>
+    <p>La app se comunica con nuestro servidor por HTTPS, y nuestro servidor usa HTTPS para comunicarse con OpenAI. Los datos guardados en tu teléfono dependen de la seguridad de tu dispositivo, como su código de bloqueo: la app no les agrega un cifrado propio. Ningún sistema es completamente seguro, pero solo enviamos lo que cada función necesita.</p>
+
+    <h2>7. Permisos del teléfono</h2>
+    <ul>
+      <li><strong>Micrófono:</strong> para grabar tus gastos por voz, solo cuando abrís esa función.</li>
+      <li><strong>Notificaciones:</strong> para avisarte que se guardó un gasto de Apple Pay.</li>
+    </ul>
+    <p>Podés cambiarlos en la app Ajustes de iOS.</p>
+
+    <h2>8. Tus derechos y cómo borrar tus datos</h2>
+    <p>Podés acceder a tus datos, corregirlos, borrarlos o llevártelos:</p>
+    <ul>
+      <li><strong>Acceder y corregir:</strong> tus gastos se ven y se editan en la app.</li>
+      <li><strong>Exportar:</strong> en <strong>Ajustes → Exportar CSV</strong> podés descargar tu historial completo.</li>
+      <li><strong>Retirar tu permiso:</strong> en <strong>Ajustes → Funciones con IA</strong>.</li>
+      <li><strong>Borrar:</strong> como se explica a continuación.</li>
+    </ul>
+    <p>Podés borrar cada gasto en la app. Si eliminás la app, se eliminan los datos guardados en el teléfono, salvo los que estén en tus copias de seguridad. Como no tenemos cuentas, no podemos vincular los registros técnicos del servidor con una persona; se eliminan solos a los 30 días. Si tenés una solicitud sobre tus datos, escribinos al correo de la sección 10.</p>
+    <p>Las suscripciones no se cancelan al eliminar la app. Se cancelan en los ajustes de tu cuenta de Apple.</p>
+
+    <h2>9. Menores de edad</h2>
+    <p>La app no está dirigida a menores de 13 años y no recopilamos datos de ellos a sabiendas.</p>
+
+    <h2>10. Cambios y contacto</h2>
+    <p>Si cambiamos esta política, publicaremos aquí la nueva versión con su fecha. Para cualquier duda o solicitud sobre tus datos, escribinos a <a href="mailto:milosoportes@gmail.com">milosoportes@gmail.com</a>.</p>
+  </main>
+  <footer>
+    <a href="../soporte/">Soporte</a>
+    <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Términos de uso</a>
+  </footer>
+</body>
+</html>
